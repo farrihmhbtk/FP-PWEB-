@@ -1,0 +1,141 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-dark);
+  background: var(--color-light);
+  overflow-x: hidden;
+}
+
+
+.box{
+  margin-top: 150px;
+  text-align: center;
+}
+
+.button{
+  font-size: 1em;
+  padding: 15px 35px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  background: #403e3d;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target{
+  visibility: visible;
+  opacity: 1;
+}
+
+.wrapper{
+  margin: 60px auto;
+  padding: 50px;
+  padding-bottom: 6%;
+  background: #FFFFFF;
+  border-radius: 20px;
+  width: 85%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  border-bottom: 50px;
+}
+
+.wrapper h2{
+  margin-top: 0;
+  color:;
+  text-align: center;
+}
+
+.wrapper .close{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.wrapper .content{
+  max-height: 30%;
+  overflow: auto;
+}
+
+/* form design */
+.container{
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  padding: 10px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-gap: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* .name{
+  width: 100%;
+  padding: 12px;
+  border: 0px solid #001253;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin top: 6px;
+  margin bottom: 16px;
+  resize: vertical;
+  background-color: #DFDFDF;
+  font-family: 'Poppins', sans-serif;
+
+} */
+
+form label{
+  font-weight:550;
+  letter-spacing: 1px;
+}
+
+
+input[type=text], textarea{
+  width: 100%;
+  padding: 12px;
+  margin-top: 3px;
+  border: 0px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin top: 6px;
+  margin bottom: 16px;
+  resize: vertical;
+  background-color: #F2F2F2;
+  font-family: 'Poppins', sans-serif;
+  font-weight:600;
+}
+
+button[type="submit"]{
+  background-color:#001253;
+  color: #fff;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.butt{
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+}
